@@ -13,47 +13,48 @@
 </head>
 
 <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
+        <h1>Rasmus Lerdorf</h1>
         <nav>
-            <ul>
-                <li><a title= "Inicio" accesskey="I" tabindex = "1" href= "index.html">Inicio</a></li>
-                <li><a title= "Aportaciones" accesskey="A" tabindex = "2" href= "aportaciones.html">Aportaciones</a></li>
-                <li><a title= "Libros" accesskey="L" tabindex = "3" href= "libros.html">Libros</a></li>
-                <li><a title= "Opiniones" accesskey="O" tabindex = "4" href= "opiniones.html">Opiniones</a></li>
-            </ul>
+            <a title= "Inicio" accesskey="I" tabindex = "1" href= "index.html">Inicio</a>
+            <a title= "Aportaciones" accesskey="A" tabindex = "2" href= "aportaciones.html">Aportaciones</a>
+            <a title= "Libros" accesskey="L" tabindex = "3" href= "libros.html">Libros</a>
+            <a title= "Opiniones" accesskey="O" tabindex = "4" href= "opiniones.html">Opiniones</a>
         </nav>
     </header>
-    <h1>Rasmus Lerdorf. Opiniones sobre él. </h1>
     
-    <p> Aquí dejo un formulario para realizar opiniones sobre Rasmus Lerdorf acerca de su carrera informática</p>
-    <form name="datos">
-        <label for="nombre">Nombre</label>
-        <input id="nombre" type="text" /><br>
+    
+    <main>
+        <h2>Opiniones sobre él. </h2>
+        <p> Aquí dejo un formulario para realizar opiniones sobre Rasmus Lerdorf acerca de su carrera informática</p>
+        <form name="datos">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" /><br>
 
-        <label for="fecha">Fecha de nacimiento</label>
-        <input id="fecha" type="date" ><br>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input id="fecha" type="date" ><br>
 
-        <p>¿Qué lenguajes conoces?</p>
-            <fieldset>
-                <legend>Seleccione las opciones que desee</legend>
-                <!-- los elementos agrupados-->
-                <label for="PHP">PHP</label>
-                <input id="PHP" type="checkbox" checked />
+            <p>¿Qué lenguajes conoces?</p>
+                <fieldset>
+                    <legend>Seleccione las opciones que desee</legend>
+                    <!-- los elementos agrupados-->
+                    <label for="PHP">PHP</label>
+                    <input id="PHP" type="checkbox" checked />
 
-                <label for="SQL">SQL</label>
-                <input id="SQL" type="checkbox" />
+                    <label for="SQL">SQL</label>
+                    <input id="SQL" type="checkbox" />
 
-                <label for="HTML">HTML</label>
-                <input id="HTML" type="checkbox" />
-            </fieldset>
-        
-        <label for = "num">¿Cuántos lenguajes de programación conoces?</label>
-        <input id = "num" type="number" min = 0><br>
+                    <label for="HTML">HTML</label>
+                    <input id="HTML" type="checkbox" />
+                </fieldset>
+            
+            <label for = "num">¿Cuántos lenguajes de programación conoces?</label>
+            <input id = "num" type="number" min = 0><br>
 
-        <label for ="textarea">¿Alguna otra cosa que quieras decir de Rasmus Lerdorf?</label><br>
-        <textarea id ="textarea" cols="30" rows="6" ></textarea>
-        <input type="submit" value="Enviar datos">
-    </form>
+            <label for ="textarea">¿Alguna otra cosa que quieras decir de Rasmus Lerdorf?</label><br>
+            <textarea id ="textarea" cols="30" rows="6" ></textarea>
+            <input type="submit" value="Enviar datos">
+        </form>
+    </main>
 </body>
 </html>
