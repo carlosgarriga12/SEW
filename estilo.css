@@ -89,9 +89,6 @@ ul {
   list-style-type: outside;
 }
 
-ul li {
-  background-color: rgb(133, 219, 116);
-}
 
 section {
   border: 0.5em solid #2f5f43;
