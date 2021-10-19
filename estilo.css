@@ -85,7 +85,7 @@ th, td {
 
 /*Especificidad: 003*/
 table tr th {
-  background-color: rgb(221, 73, 5);
+  background-color: rgb(109, 34, 0);
   border-bottom: solid 5px rgb(0, 0, 0);
   color: white;
 }
