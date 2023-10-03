@@ -6,6 +6,7 @@
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
     <title>Escritorio Virtual - Sobre mi</title>
+    <link rel="icon" type="image/x-icon" href="multimedia/imagenes/favicon.png">
     <meta name="author" content="Carlos Garriga Suárez" />
     <meta name="description" content="Documento de mi información personal del Escritorio Virtual (Virtual Desktop)" />
     <meta name="keywords" content="escritorio,virtual,información,personal" />
@@ -14,179 +15,202 @@
 </head>
 
 <body>
-    <nav>
-        <a tabindex="1" accesskey="I" href="index.html">Inicio</a>
-        <a tabindex="2" accesskey="S" href="sobremi.html">Sobre mi</a>
-        <a tabindex="3" accesskey="N" href="noticias.html">Noticias</a>
-        <a tabindex="4" accesskey="A" href="agenda.html">Agenda</a>
-        <a tabindex="5" accesskey="M" href="meteorologia.html">Meteorología</a>
-        <a tabindex="6" accesskey="V" href="viajes.html">Viajes</a>
-        <a tabindex="7" accesskey="J" href="juegos.html">Juegos</a>
-    </nav>
-    <h1>Escritorio virtual</h1>
+    <header>
+        <nav>
+            <a tabindex="1" accesskey="I" href="index.html">Inicio</a>
+            <a tabindex="2" accesskey="S" href="sobremi.html">Sobre mi</a>
+            <a tabindex="3" accesskey="N" href="noticias.html">Noticias</a>
+            <a tabindex="4" accesskey="A" href="agenda.html">Agenda</a>
+            <a tabindex="5" accesskey="M" href="meteorologia.html">Meteorología</a>
+            <a tabindex="6" accesskey="V" href="viajes.html">Viajes</a>
+            <a tabindex="7" accesskey="J" href="juegos.html">Juegos</a>
+        </nav>
 
-    <h2>Información sobre mi</h2>
+    </header>
+    <main>
+        <h1>Escritorio virtual</h1>
+        <section>
+            <h2>Información sobre mi</h2>
 
-    <p>Nombre y apellidos: Carlos Garriga Suárez</p>
-    <p>Correo electrónico: UO276903@uniovi.es</p>
-    <p>Lugar de nacimiento: Navia, Asturias</p>
+            <p>Nombre y apellidos: Carlos Garriga Suárez</p>
+            <p>Correo electrónico: UO276903@uniovi.es</p>
+            <p>Lugar de nacimiento: Navia, Asturias</p>
 
-    <p>Me considero una persona tranquila, amable, educada y alegre. Más allá de los datos que he mencionado antes,
-        mis aficiones son: el deporte, me gusta mucho tocar la guitarra, el yoga y la cocina.
-        Soy una persona bastante familiar aunque a veces puedo ser tímido.
-        Ahora mismo estoy estudiando ingeniería informática del software aquí en Oviedo. Cuando termine,
-        quisiera poder continuar mis estudios en Madrid para poder entrar en una buena empresa y comenzar mi futuro
-        profesional.
-    </p>
-    <p>Esta foto que muestro aquí abajo soy yo</p>
-    <figure>
-        <picture>
-            <source media="(max-width: 465px)" srcset="multimedia/imagenes/yo_150px.jpg">
-            <source media="(max-width: 799px)" srcset="multimedia/imagenes/yo_650px.jpg">
-            <source media="(min-width: 800px)" srcset="multimedia/imagenes/yo_850px.jpg">
-            <img src="multimedia/imagenes/yo_850px.jpg" alt="Foto de Carlos Garriga Suárez">
-        </picture>
-        <figcaption>Retrato de Carlos Garriga Suárez</figcaption>
-    </figure>
+            <p>Me considero una persona tranquila, amable, educada y alegre. Más allá de los datos que he mencionado
+                antes,
+                mis aficiones son: el deporte, me gusta mucho tocar la guitarra, el yoga y la cocina.
+                Soy una persona bastante familiar aunque a veces puedo ser tímido.
+                Ahora mismo estoy estudiando ingeniería informática del software aquí en Oviedo. Cuando termine,
+                quisiera poder continuar mis estudios en Madrid para poder entrar en una buena empresa y comenzar mi
+                futuro
+                profesional.
+            </p>
+            <p>Esta foto que muestro aquí abajo soy yo</p>
+            <figure>
+                <picture>
+                    <source media="(max-width: 465px)" srcset="multimedia/imagenes/yo_250px.jpg">
+                    <source media="(max-width: 799px)" srcset="multimedia/imagenes/yo_650px.jpg">
+                    <source media="(min-width: 800px)" srcset="multimedia/imagenes/yo_850px.jpg">
+                    <img src="multimedia/imagenes/yo_850px.jpg" alt="Foto de Carlos Garriga Suárez">
+                </picture>
+                <figcaption>Retrato de Carlos Garriga Suárez</figcaption>
+            </figure>
 
-    <p>En este audio se puede escuchar mi voz</p>
-    <audio controls>
-        <source src="multimedia/audios/yoHablando.ogg" type="audio/ogg" />
-    </audio>
+            <p>En este audio se puede escuchar mi voz</p>
+            <audio controls>
+                <source src="multimedia/audios/yoHablando.mp3" type="audio/mp3" />
+                <source src="multimedia/audios/yoHablando.wav" type="audio/wav" />
+            </audio>
 
-    <p>Este es mi vídeo favorito de música</p>
-    <video controls preload="auto">
-        <source src="multimedia/videos/guitarra.mp4" type="video/mp4" />
-    </video>
+            <p>Este es mi vídeo favorito de música</p>
+            <video controls preload="auto">
+                <source src="multimedia/videos/guitarra.mp4" type="video/mp4" />
+                <source src="multimedia/videos/guitarra.webm" type="video/webm" />
+            </video>
+        </section>
 
-    <h3>Algunas de mis aficiones</h3>
-    <ul>
-        <li>Gimnasio</li>
-        <li>Música</li>
-        <li>Videojuegos</li>
-        <li>Leer</li>
-        <li>Cocinar</li>
-    </ul>
-
-    <h3>Mis cantantes o artistas favoritos junto a sus mejores canciones</h3>
-    <ol>
-        <li>Taylor Swift
+        <section>
+            <h3>Algunas de mis aficiones</h3>
             <ul>
-                <li>Fearless</li>
-                <li>I knew you were trouble</li>
-                <li>You belong with me</li>
+                <li>Gimnasio</li>
+                <li>Música</li>
+                <li>Videojuegos</li>
+                <li>Leer</li>
+                <li>Cocinar</li>
             </ul>
-        </li>
+        </section>
 
-        <li>The Offspring
+        <section>
+            <h3>Mis cantantes o artistas favoritos junto a sus mejores canciones</h3>
+            <ol>
+                <li>Taylor Swift
+                    <ul>
+                        <li>Fearless</li>
+                        <li>I knew you were trouble</li>
+                        <li>You belong with me</li>
+                    </ul>
+                </li>
+    
+                <li>The Offspring
+                    <ul>
+                        <li>You're gonna go far kid</li>
+                        <li>We never have sex anymore</li>
+                        <li>Dividing by zero</li>
+                    </ul>
+                </li>
+    
+                <li>Vetusta Morla
+                    <ul>
+                        <li>Los días raros</li>
+                        <li>Copenhague</li>
+                        <li>Maldita dulzura</li>
+                    </ul>
+                </li>
+    
+                <li>Fito y Fitipaldis
+                    <ul>
+                        <li>Por la boca vive el pez</li>
+                        <li>Antes de que cuente diez</li>
+                        <li>Me equivocaría otra vez</li>
+                    </ul>
+                </li>
+    
+                <li>La Oreja de Van Gogh
+                    <ul>
+                        <li>Cometas por el cielo</li>
+                        <li>Muñeca de trapo</li>
+                        <li>Pop</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        
+        <section>
+            <h3>Lista de las asignaturas que más me han gustado en la carrera</h3>
+            <dl>
+                <dt>Diseño de Lenguajes de Programación</dt>
+                <dd>Combina muchos conocimientos aprendidos en la carrera y es muy divertido ver como funciona un lenguaje
+                    de
+                    programación más a fondo</dd>
+                <dt>Algoritmia</dt>
+                <dd>Enseña bases de algortimos, como aprender a resolver determinados tipos de problemas, mejorar
+                    implementaciones para hacerlas más efectivas</dd>
+                <dt>ASLEPI</dt>
+                <dd>Se sale un poco de lo habitual en esta carrera,
+                    te enseña acerca de leyes como la propiedad intelectual,
+                    comercio eléctronico. También otros aspectos como determinar si la inteligencia artificial es ética,
+                    como debería regularse
+                </dd>
+                <dt>Fundamentos de informática</dt>
+                <dd>Te enseña las bases de la informática, y te enseña los primeros lenguajes de programación con el que
+                    aprendes a resolver ejercicios básicos</dd>
+                <dt>Metodología de la programación</dt>
+                <dd>Esta asignatura te enseña realmente a programar. Es con la que más me he peleado de la carrera</dd>
+            </dl>
+        </section>
+        
+        <section>
+            <h3>Temperaturas de mi lugar de nacimiento en los últimos 10 años</h3>
+            <table>
+                <caption>Temperatura en Navia</caption>
+                <tr>
+                    <th scope="col" id="epoca">Epoca</th>
+                    <th scope="col" id="temperatura">Grados Cº</th>
+                </tr>
+                <tr>
+                    <th scope="row" id="2013" headers="epoca">2013</th>
+                    <td headers="temperatura 2013">13.7</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2014" headers="epoca">2014</th>
+                    <td headers="temperatura 2014">14.5</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2015" headers="epoca">2015</th>
+                    <td headers="temperatura 2015">14.1</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2016" headers="epoca">2016</th>
+                    <td headers="temperatura 2016">13.8</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2017" headers="epoca">2017</th>
+                    <td headers="temperatura 2017">13.7</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2018" headers="epoca">2018</th>
+                    <td headers="temperatura 2018">13.8</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2019" headers="epoca">2019</th>
+                    <td headers="temperatura 2019">13..8</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2020" headers="epoca">2020</th>
+                    <td headers="temperatura 2020">14.3</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2021" headers="epoca">2021</th>
+                    <td headers="temperatura 2021">13.7</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2022" headers="epoca">2022</th>
+                    <td headers="temperatura 2022">14.6</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Páginas que me parecen interesantes</h3>
             <ul>
-                <li>You're gonna go far kid</li>
-                <li>We never have sex anymore</li>
-                <li>Dividing by zero</li>
+                <li><a href="https://www.uniovi.es/" title="enlace a la página de la Universidad de Oviedo">Universidad de
+                        Oviedo</a></li>
+                <li><a href="https://www.lne.es/" title="enlace a la página de La Nueva España">La Nueva España</a></li>
             </ul>
-        </li>
-
-        <li>Vetusta Morla
-            <ul>
-                <li>Los días raros</li>
-                <li>Copenhague</li>
-                <li>Maldita dulzura</li>
-            </ul>
-        </li>
-
-        <li>Fito y Fitipaldis
-            <ul>
-                <li>Por la boca vive el pez</li>
-                <li>Antes de que cuente diez</li>
-                <li>Me equivocaría otra vez</li>
-            </ul>
-        </li>
-
-        <li>La Oreja de Van Gogh
-            <ul>
-                <li>Cometas por el cielo</li>
-                <li>Muñeca de trapo</li>
-                <li>Pop</li>
-            </ul>
-        </li>
-    </ol>
-
-    <h3>Lista de las asignaturas que más me han gustado en la carrera</h3>
-    <dl>
-        <dt>Diseño de Lenguajes de Programación</dt>
-        <dd>Combina muchos conocimientos aprendidos en la carrera y es muy divertido ver como funciona un lenguaje de
-            programación más a fondo</dd>
-        <dt>Algoritmia</dt>
-        <dd>Enseña bases de algortimos, como aprender a resolver determinados tipos de problemas, mejorar
-            implementaciones para hacerlas más efectivas</dd>
-        <dt>ASLEPI</dt>
-        <dd>Se sale un poco de lo habitual en esta carrera,
-            te enseña acerca de leyes como la propiedad intelectual,
-            comercio eléctronico. También otros aspectos como determinar si la inteligencia artificial es ética,
-            como debería regularse
-        </dd>
-        <dt>Fundamentos de informática</dt>
-        <dd>Te enseña las bases de la informática, y te enseña los primeros lenguajes de programación con el que
-            aprendes a resolver ejercicios básicos</dd>
-        <dt>Metodología de la programación</dt>
-        <dd>Esta asignatura te enseña realmente a programar. Es con la que más me he peleado de la carrera</dd>
-    </dl>
-
-    <h3>Temperaturas de mi lugar de nacimiento en los últimos 10 años</h3>
-    <table>
-        <caption>Temperatura en Navia</caption>
-        <tr>
-            <th scope="col" id="epoca">Epoca</th>
-            <th scope="col" id="temperatura">Grados Cº</th>
-        </tr>
-        <tr>
-            <th scope="row" id="2013" headers="epoca">2013</th>
-            <td headers="temperatura 2013">13.7</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2014" headers="epoca">2014</th>
-            <td headers="temperatura 2014">14.5</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2015" headers="epoca">2015</th>
-            <td headers="temperatura 2015">14.1</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2016" headers="epoca">2016</th>
-            <td headers="temperatura 2016">13.8</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2017" headers="epoca">2017</th>
-            <td headers="temperatura 2017">13.7</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2018" headers="epoca">2018</th>
-            <td headers="temperatura 2018">13.8</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2019" headers="epoca">2019</th>
-            <td headers="temperatura 2019">13..8</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2020" headers="epoca">2020</th>
-            <td headers="temperatura 2020">14.3</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2021" headers="epoca">2021</th>
-            <td headers="temperatura 2021">13.7</td>
-        </tr>
-        <tr>
-            <th scope="row" id="2022" headers="epoca">2022</th>
-            <td headers="temperatura 2022">14.6</td>
-        </tr>
-    </table>
-
-    <h3>Páginas que me parecen interesantes</h3>
-    <ul>
-        <li><a href="https://www.uniovi.es/" title="enlace a la página de la Universidad de Oviedo">Universidad de
-                Oviedo</a></li>
-        <li><a href="https://www.lne.es/" title="enlace a la página de La Nueva España">La Nueva España</a></li>
-    </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Carlos Garriga Suárez</p>
+    </footer>
 </body>
 
 </html>
