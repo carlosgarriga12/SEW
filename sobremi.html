@@ -26,12 +26,19 @@
             <a tabindex="7" accesskey="J" href="juegos.html">Juegos</a>
         </nav>
     </header>
+
     <section>
-        <h2>Sobre mi</h2>
+        <h2>Información personal</h2>
 
         <p>Nombre y apellidos: Carlos Garriga Suárez</p>
         <p>Correo electrónico: UO276903@uniovi.es</p>
         <p>Lugar de nacimiento: Navia, Asturias</p>
+
+        <p>En este audio se puede escuchar mi voz</p>
+        <audio controls>
+            <source src="multimedia/audios/yoHablando.mp3" type="audio/mp3" />
+            <source src="multimedia/audios/yoHablando.wav" type="audio/wav" />
+        </audio>
 
         <p>Me considero una persona tranquila, amable, educada y alegre. Más allá de los datos que he mencionado
             antes,
@@ -43,31 +50,17 @@
             profesional.
         </p>
         <p>Esta foto que muestro aquí abajo soy yo</p>
-        <figure>
-            <picture>
-                <source media="(max-width: 465px)" srcset="multimedia/imagenes/yo_150px.jpg" />
-                <source media="(max-width: 799px)" srcset="multimedia/imagenes/yo_650px.jpg" />
-                <source media="(min-width: 800px)" srcset="multimedia/imagenes/yo_850px.jpg" />
-                <img src="multimedia/imagenes/yo_850px.jpg" alt="Foto de Carlos Garriga Suárez" />
-            </picture>
-            <figcaption>Retrato de Carlos Garriga Suárez</figcaption>
-        </figure>
+        <picture>
+            <source media="(max-width: 465px)" srcset="multimedia/imagenes/yo_150px.jpg" />
+            <source media="(max-width: 799px)" srcset="multimedia/imagenes/yo_650px.jpg" />
+            <source media="(min-width: 800px)" srcset="multimedia/imagenes/yo_850px.jpg" />
+            <img src="multimedia/imagenes/yo_850px.jpg" alt="Foto de Carlos Garriga Suárez" />
+        </picture>
 
-        <p>En este audio se puede escuchar mi voz</p>
-        <audio controls>
-            <source src="multimedia/audios/yoHablando.mp3" type="audio/mp3" />
-            <source src="multimedia/audios/yoHablando.wav" type="audio/wav" />
-        </audio>
-
-        <p>Este es mi vídeo favorito de música</p>
-        <video controls preload="auto">
-            <source src="multimedia/videos/guitarra.mp4" type="video/mp4" />
-            <source src="multimedia/videos/guitarra.webm" type="video/webm" />
-        </video>
     </section>
 
     <section>
-        <h3>Algunas de mis aficiones</h3>
+        <h3>Algunas de mis aficiones y gustos</h3>
         <ul>
             <li>Gimnasio</li>
             <li>Música</li>
@@ -75,6 +68,11 @@
             <li>Leer</li>
             <li>Cocinar</li>
         </ul>
+        <p>Este es mi vídeo favorito de música</p>
+        <video controls preload="auto">
+            <source src="multimedia/videos/guitarra.mp4" type="video/mp4" />
+            <source src="multimedia/videos/guitarra.webm" type="video/webm" />
+        </video>
     </section>
 
     <section>
