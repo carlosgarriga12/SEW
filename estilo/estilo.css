@@ -34,7 +34,7 @@ nav a {
     /*ADVERTENCIA: El color de fondo lo hereda del selector header*/
     color: #F4EBD0;
     text-decoration: none;
-    padding: 0.25em;
+    padding: 1em;
     font-weight: bold;
 }
 

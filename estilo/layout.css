@@ -14,9 +14,10 @@ header {
 }
 
 /*Especificidad (0,0,1) (0,0,2)*/
-@media (max-width: 600px) {
+@media (max-width: 770px) {
     nav {
         display: flex;
+        padding: 1em;
         flex-direction: column; 
     }
 
