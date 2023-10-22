@@ -29,6 +29,7 @@ header {
 
 /*Especificidad (0,0,2)*/
 nav a {
+    /*ADVERTENCIA: El color de fondo lo hereda de header*/
     color: #F4EBD0;
     text-decoration: none;
     padding: 0.25em;
@@ -37,16 +38,19 @@ nav a {
 
 /*Especificidad (0,1,2)*/
 nav a:hover{
+    /*ADVERTENCIA: El color de primer plano lo hereda de nav a*/
     background-color: #1c3b32;
 }
 
 /*Especificidad (0,0,1)*/
 a {
+    /*ADVERTENCIA: El color de fondo lo hereda de body*/
     color: #000000;
 }
 
 /*Especificidad (0,1,1)*/
 a:hover{
+    /*ADVERTENCIA: El color de primer plano está definido anteriormente en la propiedad a*/
     background-color: #d4d4d4;
 }
 
@@ -72,6 +76,7 @@ ul {
 
 /*Especificidad (0,1,3)*/
 h3 + ul li:nth-child(3) {
+    /*ADVERTENCIA: El color de fondo lo hereda de body*/
     color: red;
 }
 
