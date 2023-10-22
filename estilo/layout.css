@@ -13,7 +13,7 @@ header {
     }
 }
 
-/*Especificidad (0,0,1)*/
+/*Especificidad (0,0,1) (0,0,2)*/
 @media (max-width: 600px) {
     nav {
         display: flex;
