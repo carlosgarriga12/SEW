@@ -7,7 +7,7 @@ header {
 }
 
 /*Especificidad (0,0,1)*/
-@media (max-width: 900px) {
+@media (max-width: 1070px) {
     header {
         flex-direction: column; 
     }
