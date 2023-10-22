@@ -10,7 +10,7 @@ body{
 h2 {
     font-family: Arial, sans-serif;
     background-color: #B68D40;
-    color: #F4EBD0;
+    color: #ffffff;
     padding: 0.5em;
 }
 
@@ -18,13 +18,13 @@ h2 {
 h3 {
     font-family: Arial, sans-serif;
     background-color: #D6AD60;
-    color: #F4EBD0;
+    color: #ffffff;
     padding: 0.5em;
 }
 
 /*Especificidad (0,0,1)*/
 header {
-    color: #F4EBD0;
+    color: #ffffff;
     background-color: #122620;
     padding: 0.5em;
 }
@@ -32,7 +32,7 @@ header {
 /*Especificidad (0,0,2)*/
 nav a {
     /*ADVERTENCIA: El color de fondo lo hereda del selector header*/
-    color: #F4EBD0;
+    color: #ffffff;
     text-decoration: none;
     padding: 1em;
     font-weight: bold;
@@ -96,13 +96,13 @@ video, audio {
 /*Especificidad (0,0,1)*/
 table {
     border-collapse: collapse;
-    border: 0.1em solid black;
+    border: 0.1em solid #000000;
 }
 
 /*Especificidad (0,0,1)*/
 th, td, tr {
     padding: 0.3em;
-    border: 0.1em solid black;
+    border: 0.1em solid #000000;
     text-align: center;
 }
 
