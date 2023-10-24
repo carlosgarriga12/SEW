@@ -1,0 +1,38 @@
+<!ELEMENT rutas (ruta+)>
+<!ELEMENT ruta (fechaInicio?, horaInicio?, duracion,
+agencia, descripcion, personasAdecuadas, 
+lugarInicio, direccionInicio, coordenadas,
+referencias, hitos)>
+
+<!ATTLIST ruta nombre CDATA #REQUIRED>
+<!ATTLIST ruta tipo CDATA #REQUIRED>
+<!ATTLIST ruta medioTransporte CDATA #REQUIRED>
+<!ATTLIST ruta recomendacion CDATA #REQUIRED>
+
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ELEMENT horaInicio (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT agencia (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT personasAdecuadas (#PCDATA)>
+<!ELEMENT lugarInicio (#PCDATA)>
+<!ELEMENT direccionInicio (#PCDATA)>
+
+<!ELEMENT coordenadas (longitud, latitud, altitud) >
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (descripcion, coordenadas, distanciaHitoAnterior, fotografias, video*)>
+
+<!ATTLIST hito nombre CDATA #REQUIRED>
+<!ATTLIST distanciaHitoAnterior unidadesDistancia CDATA #REQUIRED>
+<!ELEMENT distanciaHitoAnterior (#PCDATA)>
+
+<!ELEMENT fotografias (fotografia+) >
+<!ELEMENT fotografia (#PCDATA)>
+<!ELEMENT video (#PCDATA)>

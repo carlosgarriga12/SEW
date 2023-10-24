@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas SYSTEM "./rutas.dtd">
+<rutas>
+    <ruta nombre="Cueva de la Vaca – Mural de la Prehistoria Recorrido circular desde El Palmar" tipo="Senderismo" medioTransporte="A pie" recomendacion="8" >
+        <duracion>PT3H23M</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Caminata moderada. 
+            Se necesita buena forma física. 
+            Sendas de fácil acceso. 
+            Para todos los niveles. 
+            El punto de inicio de la Ruta es accesible en transporte público</descripcion>
+        <personasAdecuadas>Personas con buena forma física</personasAdecuadas>
+        <lugarInicio>Parada del Bus Viazul</lugarInicio>
+        <direccionInicio>173-121 Rafael Trejo</direccionInicio>
+        <coordenadas>
+            <longitud>-83.71173819098695</longitud>
+            <latitud>22.613662371370935</latitud>
+            <altitud>146</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://www.komoot.com/es-es/smarttour/423387</referencia>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/vinales-mural-de-la-prehistoria-cueva-de-la-vaca-circular-95876954</referencia>
+            <referencia>https://www.komoot.com/es-es/guide/2718679/rutas-de-senderismo-en-sierra-de-vinales</referencia>
+        </referencias>
+        <hitos>
+            <hito nombre="Mirrador Aussichtspunkt">
+                <descripcion>Excelentes vistas sobre el valle de Viñales</descripcion>
+                <coordenadas>
+                    <longitud>-83.71955634586483</longitud>
+                    <latitud>22.599765064501455</latitud>
+                    <altitud>185</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >0.0</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>miradorValles.jpeg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Cueva de la vaca">
+                <descripcion>Puedes caminar por la cueva y continuar tu recorrido al otro lado del Mogote</descripcion>
+                <coordenadas>
+                    <longitud>-83.71731675873599</longitud>
+                    <latitud>22.638450898014174</latitud>
+                    <altitud>126</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >0.7</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>cuevaVaca.jpg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Mural de la prehistoria">
+                <descripcion>Realmente impresionante y también se puede admirar desde lejos.</descripcion>
+                <coordenadas>
+                    <longitud>-83.74290835014092</longitud>
+                    <latitud>22.61976036125839</latitud>
+                    <altitud>190</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >5.46</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>muralPrehistoria.jpg</fotografia>
+                </fotografias>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Recorrido circular de senderismo desde Topes de Collantes" tipo="Senderismo" medioTransporte="A pie" recomendacion="8" >
+        <duracion>PT2H4M</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Caminata moderada. 
+            Se necesita buena forma física. 
+            Sendas de fácil acceso. Para todos los niveles. 
+            El punto de inicio de la Ruta está junto a un aparcamiento.
+        </descripcion>
+        <personasAdecuadas>Personas con buena forma física</personasAdecuadas>
+        <lugarInicio>Topes de Collante</lugarInicio>
+        <direccionInicio>Topes de Collante, Cuba</direccionInicio>
+        <coordenadas>
+            <longitud>-80.01815662080142</longitud>
+            <latitud>21.915225131956095</latitud>
+            <altitud>760</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://es.wikiloc.com/rutas/senderismo/cuba/sancti-spiritus/topes-de-collantes</referencia>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/topes-de-collantes-sendero-salto-del-caburni-122641662</referencia>
+            <referencia>https://oceanika.travel.blog/2018/04/17/parque-nacional-topes-de-collantes-ruta-por-el-salto-de-caburni/</referencia>
+        </referencias>
+        <hitos>
+            <hito nombre="Mirrador Aussichtspunkt">
+                <descripcion>Excelentes vistas sobre el valle de Viñales</descripcion>
+                <coordenadas>
+                    <longitud>-83.71955634586483</longitud>
+                    <latitud>22.599765064501455</latitud>
+                    <altitud>185</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >0.0</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>miradorValles.jpeg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Cueva de la vaca">
+                <descripcion>Puedes caminar por la cueva y continuar tu recorrido al otro lado del Mogote</descripcion>
+                <coordenadas>
+                    <longitud>-83.71731675873599</longitud>
+                    <latitud>22.638450898014174</latitud>
+                    <altitud>126</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >0.7</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>cuevaVaca.jpg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Mural de la prehistoria">
+                <descripcion>Realmente impresionante y también se puede admirar desde lejos.</descripcion>
+                <coordenadas>
+                    <longitud>-83.74290835014092</longitud>
+                    <latitud>22.61976036125839</latitud>
+                    <altitud>190</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >5.46</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>muralPrehistoria.jpg</fotografia>
+                </fotografias>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Cueva de la Vaca – Mural de la Prehistoria Recorrido circular desde El Palmar" tipo="Senderismo" medioTransporte="A pie" recomendacion="8" >
+        <duracion>PT3H23M</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Caminata moderada. 
+            Se necesita buena forma física. 
+            Sendas de fácil acceso. 
+            Para todos los niveles. 
+            El punto de inicio de la Ruta es accesible en transporte público</descripcion>
+        <personasAdecuadas>Personas con buena forma física</personasAdecuadas>
+        <lugarInicio>Parada del Bus Viazul</lugarInicio>
+        <direccionInicio>173-121 Rafael Trejo</direccionInicio>
+        <coordenadas>
+            <longitud>-83.71173819098695</longitud>
+            <latitud>22.613662371370935</latitud>
+            <altitud>146</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://www.komoot.com/es-es/smarttour/423387</referencia>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/vinales-mural-de-la-prehistoria-cueva-de-la-vaca-circular-95876954</referencia>
+            <referencia>https://www.komoot.com/es-es/guide/2718679/rutas-de-senderismo-en-sierra-de-vinales</referencia>
+        </referencias>
+        <hitos>
+            <hito nombre="Mirrador Aussichtspunkt">
+                <descripcion>Excelentes vistas sobre el valle de Viñales</descripcion>
+                <coordenadas>
+                    <longitud>-83.71955634586483</longitud>
+                    <latitud>22.599765064501455</latitud>
+                    <altitud>185</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >0.0</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>miradorValles.jpeg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Cueva de la vaca">
+                <descripcion>Puedes caminar por la cueva y continuar tu recorrido al otro lado del Mogote</descripcion>
+                <coordenadas>
+                    <longitud>-83.71731675873599</longitud>
+                    <latitud>22.638450898014174</latitud>
+                    <altitud>126</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >0.7</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>cuevaVaca.jpg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Mural de la prehistoria">
+                <descripcion>Realmente impresionante y también se puede admirar desde lejos.</descripcion>
+                <coordenadas>
+                    <longitud>-83.74290835014092</longitud>
+                    <latitud>22.61976036125839</latitud>
+                    <altitud>190</altitud>
+                </coordenadas>
+                <distanciaHitoAnterior unidadesDistancia="km" >5.46</distanciaHitoAnterior>
+                <fotografias>
+                    <fotografia>muralPrehistoria.jpg</fotografia>
+                </fotografias>
+            </hito>
+        </hitos>
+    </ruta>
+</rutas>

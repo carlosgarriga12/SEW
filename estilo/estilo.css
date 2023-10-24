@@ -18,7 +18,7 @@ h2, h3 {
 header {
     color: #ffffff;
     background-color: #122620;
-    padding: 0.5em;
+    padding: 1em;
 }
 
 /*Especificidad (0,0,2)*/
@@ -80,7 +80,7 @@ ol li ul li {
 }
 
 /*Especificidad (0,0,1)*/
-video, audio {
+video, audio, img {
     width: 70%;
     height: auto;
 }
