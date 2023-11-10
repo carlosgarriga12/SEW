@@ -16,7 +16,7 @@ nav {
     /*Especificidad (0,0,1)*/
     header {
         flex-direction: column;
-        /*ADVERTENCIA*/
+        /*ADVERTENCIA redefinicion por media query*/
         align-items: baseline;
     }
     /*Especificidad (0,0,1)*/
