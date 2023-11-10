@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>ruta1</name>
+<LineString>
+<coordinates>
+-83.71173819098695,22.613662371370935,146
+-83.71955634586483,22.599765064501455,185
+-83.71731675873599,22.638450898014174,126
+-83.74290835014092,22.61976036125839,190
+</coordinates>
+</LineString>
+</Placemark>
+</Document>
+</kml>

@@ -26,7 +26,6 @@ nav a {
     /*ADVERTENCIA: El color de fondo lo hereda del selector header*/
     color: #ffffff;
     text-decoration: none;
-    padding: 1em;
     font-weight: bold;
 }
 

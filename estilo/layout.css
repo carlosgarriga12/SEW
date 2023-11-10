@@ -7,21 +7,20 @@ header {
 }
 
 /*Especificidad (0,0,1)*/
-@media (max-width: 1070px) {
-    header {
-        flex-direction: column; 
-    }
+nav {
+    display: flex;
+    gap: 1em;
 }
 
-/*Especificidad (0,0,1) (0,0,2)*/
 @media (max-width: 770px) {
-    nav {
-        display: flex;
-        padding: 1em;
-        flex-direction: column; 
+    /*Especificidad (0,0,1)*/
+    header {
+        flex-direction: column;
+        /*ADVERTENCIA*/
+        align-items: baseline;
     }
-
-    nav a {
-        text-align: center;
+    /*Especificidad (0,0,1)*/
+    nav {
+       flex-direction: column;
     }
 }

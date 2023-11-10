@@ -27,12 +27,14 @@ referencias, hitos)>
 <!ELEMENT referencia (#PCDATA)>
 
 <!ELEMENT hitos (hito+)>
-<!ELEMENT hito (descripcion, coordenadas, distanciaHitoAnterior, fotografias, video*)>
+<!ELEMENT hito (descripcion, coordenadas, distanciaHitoAnterior, fotografias, videos?)>
 
 <!ATTLIST hito nombre CDATA #REQUIRED>
 <!ATTLIST distanciaHitoAnterior unidadesDistancia CDATA #REQUIRED>
 <!ELEMENT distanciaHitoAnterior (#PCDATA)>
 
 <!ELEMENT fotografias (fotografia+) >
+<!ELEMENT videos (video*) >
+
 <!ELEMENT fotografia (#PCDATA)>
 <!ELEMENT video (#PCDATA)>

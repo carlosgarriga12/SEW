@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points="10, 780
+60, 20
+110, 30
+160, 155
+210, 590
+260, 780
+10, 780" style="fill:white;stroke:red;stroke-width:4" />
+<text x="10" y="790" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+<text x="60" y="790" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Topes de Collante
+</text>
+<text x="110" y="790" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Hito 1
+</text>
+<text x="160" y="790" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Hito 2
+</text>
+<text x="210" y="790" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Salto de caburni
+</text>
+<text x="260" y="790" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+</svg>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE rutas SYSTEM "./rutas.dtd">
-<rutas>
+<rutas xmlns="http://www.uniovi.es"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.uniovi.es rutas.xsd" >
     <ruta nombre="Cueva de la Vaca – Mural de la Prehistoria Recorrido circular desde El Palmar" tipo="Senderismo" medioTransporte="A pie" recomendacion="8" >
         <duracion>3 horas y 20 minutos</duracion>
         <agencia>Sin agencia</agencia>
