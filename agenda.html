@@ -11,7 +11,10 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/agenda.css" />
     <link rel="icon" type="image/x-icon" href="multimedia/imagenes/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/agenda.js"></script>
 </head>
 
 <body>
@@ -23,16 +26,13 @@
             <a tabindex="3" accesskey="N" href="noticias.html">Noticias</a>
             <a tabindex="4" accesskey="A" href="agenda.html">Agenda</a>
             <a tabindex="5" accesskey="M" href="meteorologia.html">Meteorología</a>
-            <a tabindex="6" accesskey="V" href="viajes.html">Viajes</a>
+            <a tabindex="6" accesskey="V" href="viajes.php">Viajes</a>
             <a tabindex="7" accesskey="J" href="juegos.html">Juegos</a>
         </nav>
     </header>
-    <h2>Agenda</h2>
-    <p>En desarrollo</p>
-    <!--
-        <footer>
-        <p>Carlos Garriga Suárez</p>
-    </footer>
-    -->
+    <section data-topic="f1">
+        <h2>Agenda</h2>
+        <button onclick="agenda.obtenerCarrerasTemporadaActual()">Datos de carreras</button>
+    </section>
 </body>
 </html>

@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 
+Escala_Y = 0.5
+
 def textoParaLugarPolilinea(x, y, texto):
     cadenaTexto = f'<text x="{x}" y="{y}" style="writing-mode: tb; glyph-orientation-vertical: 0;">\n'
     cadenaTexto += texto + '\n'
@@ -33,23 +35,23 @@ def generarKMLs(archivoXML):
         maxAltitud = max(altitudes)
         points = ""
         initialX = 10
-        points += f"{initialX}, {20 + maxAltitud}\n"
+        points += f"{initialX}, {(20 + maxAltitud)*Escala_Y}\n"
         text = ""
 
-        text+= textoParaLugarPolilinea(initialX, 20 + maxAltitud + 10, "Nivel del mar") 
+        text+= textoParaLugarPolilinea(initialX, (20 + maxAltitud + 10)*Escala_Y, "Nivel del mar") 
 
         distance = initialX
         distance += 50
         
         for j, altitud in enumerate(altitudes):
             y = 20 + (maxAltitud - altitud)
-            points += f"{distance}, {y}\n"
-            text += textoParaLugarPolilinea(distance, 20 + maxAltitud + 10, nombreLugares[j])
+            points += f"{distance}, {y*Escala_Y}\n"
+            text += textoParaLugarPolilinea(distance, (20 + maxAltitud + 10)*Escala_Y, nombreLugares[j])
             distance+= 50
         
-        points += f"{distance}, {20 + maxAltitud}\n"
-        text += textoParaLugarPolilinea(distance, 20 + maxAltitud + 10, "Nivel del mar")
-        points += f"{initialX}, {20 + maxAltitud}"
+        points += f"{distance}, {(20 + maxAltitud)*Escala_Y}\n"
+        text += textoParaLugarPolilinea(distance, (20 + maxAltitud + 10)*Escala_Y, "Nivel del mar")
+        points += f"{initialX}, {(20 + maxAltitud)*Escala_Y}"
 
         svg += f'<polyline points="{points}" style="fill:white;stroke:red;stroke-width:4" />\n'
         svg += text

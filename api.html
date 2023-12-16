@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
-    <title>Escritorio Virtual - Juegos</title>
+    <title>Escritorio Virtual - Ejercicio API</title>
     <meta name ="author" content ="Carlos Garriga Suárez" />
     <meta name ="description" content ="Documento de los juegos del Escritorio Virtual (Virtual Desktop)" />
     <meta name ="keywords" content ="escritorio,virtual,juegos" />
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/api.css" />
     <link rel="icon" type="image/x-icon" href="multimedia/imagenes/favicon.png" />
-
+    
 </head>
 
 <body>
@@ -35,5 +35,15 @@
         <a tabindex="11" accesskey="P" href="api.html">API</a>
         <a tabindex="12" accesskey="Z" href="php/pizzeria.php">Pizzería</a>
     </nav>
+    <h2>Ejercicio de las API</h2>
+    <p>El ejercicio consiste en un lienzo en el que puedes realizar dibujos, arrastrar imágenes al lienzo y guardar de manera local tu
+        progreso para que puedas seguir pintando en otro momento. Las API usadas son API Web Storage, API Drag and Drop y API Canvas.
+    </p>
+    <main>
+        <canvas>
+        </canvas>
+        <script src="js/api.js"></script>
+    </main>
+    <button onclick="dibujoAlmacenado.clearCanvas()">Limpiar Canvas</button>
 </body>
 </html>

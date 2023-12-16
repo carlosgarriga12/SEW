@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="2.0">
-<polyline points="10, 670
-60, 28
-110, 20
-160, 78
-210, 120
-260, 670
-10, 670" style="fill:white;stroke:red;stroke-width:4" />
-<text x="10" y="680" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<polyline points="10, 335.0
+60, 14.0
+110, 10.0
+160, 39.0
+210, 60.0
+260, 335.0
+10, 335.0" style="fill:white;stroke:red;stroke-width:4" />
+<text x="10" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Nivel del mar
 </text>
-<text x="60" y="680" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="60" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 El Chorrito
 </text>
-<text x="110" y="680" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="110" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Puente
 </text>
-<text x="160" y="680" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="160" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Vista de vegas grande
 </text>
-<text x="210" y="680" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="210" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Cascadas de Vegas
 </text>
-<text x="260" y="680" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="260" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Nivel del mar
 </text>
 </svg>

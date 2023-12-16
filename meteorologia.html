@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" type="image/x-icon" href="multimedia/imagenes/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,16 +24,15 @@
             <a tabindex="3" accesskey="N" href="noticias.html">Noticias</a>
             <a tabindex="4" accesskey="A" href="agenda.html">Agenda</a>
             <a tabindex="5" accesskey="M" href="meteorologia.html">Meteorología</a>
-            <a tabindex="6" accesskey="V" href="viajes.html">Viajes</a>
+            <a tabindex="6" accesskey="V" href="viajes.php">Viajes</a>
             <a tabindex="7" accesskey="J" href="juegos.html">Juegos</a>
         </nav>
     </header>
     <h2>Meteorologia</h2>
-    <p>En desarrollo</p>
-    <!--
-        <footer>
-        <p>Carlos Garriga Suárez</p>
-    </footer>
-    -->
+    <script src="js/pais.js"></script>
+    <section data-topic="meteorologia">
+        <h3>Datos meteorológicos</h3>
+        <button onclick="pais.obtenerMeteorologia();">Obtener datos meteorológicos</button>
+    </section>
 </body>
 </html>

@@ -11,7 +11,10 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/noticias.css" />
     <link rel="icon" type="image/x-icon" href="multimedia/imagenes/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/noticias.js"></script>
 </head>
 
 <body>
@@ -23,16 +26,25 @@
             <a tabindex="3" accesskey="N" href="noticias.html">Noticias</a>
             <a tabindex="4" accesskey="A" href="agenda.html">Agenda</a>
             <a tabindex="5" accesskey="M" href="meteorologia.html">Meteorología</a>
-            <a tabindex="6" accesskey="V" href="viajes.html">Viajes</a>
+            <a tabindex="6" accesskey="V" href="viajes.php">Viajes</a>
             <a tabindex="7" accesskey="J" href="juegos.html">Juegos</a>
         </nav>
     </header>
     <h2>Noticias</h2>
-    <p>En desarrollo</p>
-    <!--
-        <footer>
-        <p>Carlos Garriga Suárez</p>
-    </footer>
-    -->
+    <p>Seleccione un archivo de texto:</p>
+    <p>
+        <input type="file" id="archivoTexto" onchange="noticias.readInputFile(this.files);">
+    </p>
+    <main>
+    </main>
+    <p><label for="titulo">Título: </label></p>
+    <textarea name="titulo" id="titulo" maxlength="1000" required></textarea>
+    <p><label for="subtitulo">Subtítulo: </label></p>
+    <textarea name="subtitulo" id="subtitulo" maxlength="1000" required></textarea>
+    <p><label for="contenido">Contenido: </label></p>
+    <textarea name="contenido" id="contenido" maxlength="1000" required></textarea>
+    <p><label for="autor">Autor: </label></p>
+    <textarea name="autor" id="autor" maxlength="1000" required></textarea>
+    <p><button onclick="noticias.addNoticia()">Añadir noticia</button></p>
 </body>
 </html>

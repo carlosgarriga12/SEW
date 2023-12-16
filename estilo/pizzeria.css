@@ -1,0 +1,13 @@
+/* Carlos Garriga Suárez UO276903*/
+/*Especificidad (0,0,1)*/
+h4, h5 {
+    font-family: Arial, sans-serif;
+    background-color: #B68D40;
+    color: #ffffff;
+    padding: 0.5em;
+}
+
+/*Especificidad (0,0,1)*/
+h2 {
+    text-align: center;
+}

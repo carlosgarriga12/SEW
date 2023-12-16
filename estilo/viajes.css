@@ -1,0 +1,60 @@
+/* Carlos Garriga Suárez UO276903*/
+/*Especificidad (0,1,3)*/
+body > section:nth-child(4) > section,
+body > section:nth-child(8) > section
+{
+    height: 50vh;
+}
+
+/*Especificidad (0,1,2)*/
+body > section:nth-child(9) {
+    height: auto;
+}
+
+/*Especificidad (0,1,3)*/
+body > section:nth-child(9) > svg {
+    width: auto;
+    height: 70vh;
+}
+
+/*Especificidad (0,1,2)*/
+body > section:nth-last-child(1) {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Especificidad (0,1,3)*/
+body > section:nth-last-child(1) img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: all 0.5s;
+    object-fit: cover;
+}
+
+/*Especificidad (0,1,3)*/
+body > section:nth-last-child(1) button{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 1em;
+}
+
+/*Especificidad (0,2,3)*/
+body > section:nth-last-child(1) button:nth-child(12){
+    top: 50%;
+    right: 2%;
+}
+
+/*Especificidad (0,2,3)*/
+body > section:nth-last-child(1) button:nth-child(13){
+    top: 50%;
+    left: 2%;
+}
