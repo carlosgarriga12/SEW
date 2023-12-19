@@ -1,15 +1,19 @@
 /* Carlos Garriga Suárez UO276903*/
 /*Especificidad (0,0,2)*/
-body > section {
+body > section:nth-child(3) {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.1em;
+    gap: 0.5em;
     justify-content: center;
 }
 
 /*Especificidad (0,1,2)*/
-body > section > :first-child {
+body > section:nth-child(3) > :first-child {
     width: 100%;
+}
+
+/*Especificidad(0,0,1)*/
+h2{
     text-align: center;
 }
 

@@ -156,10 +156,8 @@ class Moneda{
             echo "<section>";
             echo "<h3>Carrusel generado correctamente</h3>";
             for($i=0;$i<$carrusel -> getPerPage();$i++) {
-                $titulo = $fotos->items[$i]->title;
-    
                 $URLfoto = $fotos->items[$i]->media->m;       
-                echo "<img alt='".$titulo."' src='".str_replace('_m', '_b', $URLfoto)."' />";
+                echo "<img alt='". "Foto carrusel ".$i."' src='".str_replace('_m', '_b', $URLfoto)."' />";
                 
             }
             echo "<button onclick='carrusel.siguienteFoto();'> > </button>";

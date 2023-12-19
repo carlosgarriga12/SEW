@@ -101,7 +101,7 @@ class Memoria {
         for(let i = 0; i < this.elements.length; i++) {
             elements += this.createElement(this.elements[i].source, this.elements[i].element);
         }
-        var section = document.querySelector('section');
+        var section = document.querySelector('body > section:nth-child(3)');
         var actualText = section.innerHTML;
         actualText = actualText + elements;
         section.innerHTML = actualText;

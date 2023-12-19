@@ -12,6 +12,11 @@ nav {
     gap: 1em;
 }
 
+/*Especificidad (0,0,3)*/
+body > section > nav {
+    justify-content: center;
+}
+
 @media (max-width: 770px) {
     /*Especificidad (0,0,1)*/
     header {

@@ -105,13 +105,13 @@ th, td, tr {
 }
 
 /*Especificidad (0,0,2)*/
-body > nav {
+body > section > nav {
     background-color: #0e5d00;
     padding: 1em;
 }
 
 /*Especificidad (0,1,3)*/
-body > nav a:hover {
+body > section > nav a:hover {
     background-color: #148700;
 }
 
