@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://localhost/EscritorioVirtual/php/pizzeria.php# -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Datos que describen el documento -->
+    
+    <title>Escritorio Virtual - Pizzeria</title>
+    <meta name="author" content="Carlos Garriga Suárez">
+    <meta name="description" content="Documento de los juegos del Escritorio Virtual (Virtual Desktop)">
+    <meta name="keywords" content="escritorio,virtual,juegos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://localhost/EscritorioVirtual/estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="https://localhost/EscritorioVirtual/estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="https://localhost/EscritorioVirtual/estilo/pizzeria.css">
+    <link rel="icon" type="image/x-icon" href="https://localhost/EscritorioVirtual/multimedia/imagenes/favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Escritorio virtual</h1>
+        <nav>
+            <a tabindex="1" accesskey="I" href="https://localhost/EscritorioVirtual/index.html">Inicio</a>
+            <a tabindex="2" accesskey="S" href="https://localhost/EscritorioVirtual/sobremi.html">Sobre mi</a>
+            <a tabindex="3" accesskey="N" href="https://localhost/EscritorioVirtual/noticias.html">Noticias</a>
+            <a tabindex="4" accesskey="A" href="https://localhost/EscritorioVirtual/agenda.html">Agenda</a>
+            <a tabindex="5" accesskey="M" href="https://localhost/EscritorioVirtual/meteorologia.html">Meteorología</a>
+            <a tabindex="6" accesskey="V" href="https://localhost/EscritorioVirtual/viajes.php">Viajes</a>
+            <a tabindex="7" accesskey="J" href="https://localhost/EscritorioVirtual/juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Menú de juegos</h2>
+        <nav>
+            <a tabindex="8" accesskey="E" href="https://localhost/EscritorioVirtual/memoria.html">Memoria</a>
+            <a tabindex="9" accesskey="U" href="https://localhost/EscritorioVirtual/sudoku.html">Sudoku</a>
+            <a tabindex="10" accesskey="C" href="https://localhost/EscritorioVirtual/crucigrama.php">Crucigrama</a>
+            <a tabindex="11" accesskey="P" href="https://localhost/EscritorioVirtual/api.html">API</a>
+            <a tabindex="12" accesskey="Z" href="https://localhost/EscritorioVirtual/php/pizzeria.php">Pizzería</a>
+        </nav>
+    </section>
+    <h2>Pizzeria virtual</h2>
+    <section>
+        <h3>Panel de control</h3>
+        <form action="https://localhost/EscritorioVirtual/php/pizzeria.php#" method="post" name="panel" enctype="multipart/form-data">
+            <p><input type="submit" value="Crear base de datos" name="crear"></p>
+            <p>
+                <label for="archivo">Seleccione el archivo para importar datos: </label>
+                <input type="file" id="archivo" name="archivo">
+            </p>
+            <p><input type="submit" value="Importar datos" name="importar"></p>
+            <p><input type="submit" value="Exportar datos" name="exportar"></p>
+        </form>
+    </section>
+    <p>Base de datos creada correctamente</p>    <section>
+        <h3>Aplicación</h3>
+        <section>
+            <h4>Clientes de la pizzería</h4>
+            <p>No hay clientes en la base de datos</p>        </section>
+        <section>
+            <h4>Pizzas y sus ingredientes</h4>
+            <p>No hay pizzas en la base de datos</p>        </section>
+        <section>
+            <h4>Buscar encargos por cliente</h4>
+            <p>No hay clientes en la base de datos</p>        </section>
+    </section>
+
+</body></html>
