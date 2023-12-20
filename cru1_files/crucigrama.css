@@ -1,0 +1,73 @@
+/* Carlos Garriga Suárez UO276903*/
+/*Especificidad (0,0,1)*/
+main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    border: 0.05em solid #000000;
+    width: 60%;
+    height: 60vh;
+    margin: 0em auto;
+}
+
+/*Especificidad (0,0,2)*/
+main p {
+    padding: 0.2em;
+    border: 0.05em solid #000000;
+    margin: 0em;
+    text-align: center;
+}
+
+/*Especificidad (0,1,2)*/
+main p[data-state="empty"] {
+    /*ADVERTENCIA: El color de primer plano está heredado y establecido en el selector body en la hoja de estilos estilo.css*/
+    background-color: #000000;
+}
+
+/*Especificidad (0,1,2)*/
+main p[data-state="clicked"] {
+    /*ADVERTENCIA: El color de primer plano está heredado y establecido en el selector body en la hoja de estilos estilo.css*/
+    background-color: #ffff00;
+}
+
+/*Especificidad (0,1,2)*/
+main p[data-state="none"] {
+    cursor: pointer;
+}
+
+/*Especificidad (0,0,1)*/
+h2 {
+    text-align: center;
+}
+
+/*Especificidad (0,1,1)*/
+section[data-type=botonera] {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Especificidad (0,1,2)*/
+section[data-type=botonera] h3 {
+    width: 100%;
+    text-align: center;
+}
+
+/*Especificidad (0,1,2)*/
+section[data-type=botonera] button {
+    width: calc(15% - 1em);
+    height: 4em;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media (min-width: 771px) {
+    /*Especificidad (0,1,1)*/
+    section[data-type=botonera] {
+        visibility: hidden;
+        height: 0em;
+        width: 0em;
+    }
+}
