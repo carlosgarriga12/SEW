@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://localhost/EscritorioVirtual/viajes.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Datos que describen el documento -->
+    
+    <title>Escritorio Virtual - Viajes</title>
+    <meta name="author" content="Carlos Garriga Suárez">
+    <meta name="description" content="Documento de mis viajes del Escritorio Virtual (Virtual Desktop)">
+    <meta name="keywords" content="escritorio,virtual,viajes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://localhost/EscritorioVirtual/estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="https://localhost/EscritorioVirtual/estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="https://localhost/EscritorioVirtual/estilo/viajes.css">
+    <link href="./vij2_files/mapbox-gl.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://localhost/EscritorioVirtual/multimedia/imagenes/favicon.png">
+    <script src="./vij2_files/jquery-3.7.1.min.js.descarga" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./vij2_files/mapbox-gl.js.descarga"></script>
+    <script src="https://localhost/EscritorioVirtual/js/viajes.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Escritorio virtual</h1>
+        <nav>
+            <a tabindex="1" accesskey="I" href="https://localhost/EscritorioVirtual/index.html">Inicio</a>
+            <a tabindex="2" accesskey="S" href="https://localhost/EscritorioVirtual/sobremi.html">Sobre mi</a>
+            <a tabindex="3" accesskey="N" href="https://localhost/EscritorioVirtual/noticias.html">Noticias</a>
+            <a tabindex="4" accesskey="A" href="https://localhost/EscritorioVirtual/agenda.html">Agenda</a>
+            <a tabindex="5" accesskey="M" href="https://localhost/EscritorioVirtual/meteorologia.html">Meteorología</a>
+            <a tabindex="6" accesskey="V" href="https://localhost/EscritorioVirtual/viajes.php">Viajes</a>
+            <a tabindex="7" accesskey="J" href="https://localhost/EscritorioVirtual/juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <h2>Mapas</h2>
+    <section>
+        <h3>Mapa estático de la posición del usuario</h3>
+        
+    <img src="./vij2_files/300x200" alt="Mapa estático de la posición del usuario"></section>
+    <section>
+        <h3>Mapa dinámico de la posición del usuario</h3>
+        
+        <section id="mapaDinamico" class="mapboxgl-map">
+            <h4>Esta sección se usará para representar el mapa</h4>
+        <div class="mapboxgl-canary" style="visibility: hidden;"></div><div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" role="region" width="1887" height="460" style="width: 1887px; height: 459.5px;"></canvas><div aria-label="Map marker" class="mapboxgl-marker mapboxgl-marker-anchor-center" style="transform: translate(944px, 230px) translate(-50%, -50%) translate(0px, -14px); opacity: 1; pointer-events: auto;"><svg display="block" height="41px" width="27px" viewBox="0 0 27 41"><defs><radialgradient id="shadowGradient"><stop offset="10%" stop-opacity="0.4"></stop><stop offset="100%" stop-opacity="0.05"></stop></radialgradient></defs><ellipse cx="13.5" cy="34.8" rx="10.5" ry="5.25" fill="url(#shadowGradient)"></ellipse><path fill="#3FB1CE" d="M27,13.5C27,19.07 20.25,27 14.75,34.5C14.02,35.5 12.98,35.5 12.25,34.5C6.75,27 0,19.22 0,13.5C0,6.04 6.04,0 13.5,0C20.96,0 27,6.04 27,13.5Z"></path><path opacity="0.25" d="M13.5,0C6.04,0 0,6.04 0,13.5C0,19.22 6.75,27 12.25,34.5C13,35.52 14.02,35.5 14.75,34.5C20.25,27 27,19.07 27,13.5C27,6.04 20.96,0 13.5,0ZM13.5,1C20.42,1 26,6.58 26,13.5C26,15.9 24.5,19.18 22.22,22.74C19.95,26.3 16.71,30.14 13.94,33.91C13.74,34.18 13.61,34.32 13.5,34.44C13.39,34.32 13.26,34.18 13.06,33.91C10.28,30.13 7.41,26.31 5.02,22.77C2.62,19.23 1,15.95 1,13.5C1,6.58 6.58,1 13.5,1Z"></path><circle fill="white" cx="13.5" cy="13.5" r="5.5"></circle></svg></div></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"></div><div class="mapboxgl-ctrl-bottom-left"><div class="mapboxgl-ctrl" style="display: block;"><a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a></div></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-attrib"><div class="mapboxgl-ctrl-attrib-inner" role="list"><a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox">© Mapbox</a> <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=mapbox&amp;id=streets-v12&amp;access_token=pk.eyJ1IjoiY2FybG9zZ2FycmlnYTEyIiwiYSI6ImNscGk0a3RhdDBjaG4yaW1hbWZmejFmcXYifQ.Tt6wJvHxGfjJS6BKNc0Tkw#/-5.84971/43.35535/13" target="_blank" aria-label="Map feedback" rel="noopener nofollow">Improve this map</a></div></div></div></div></section>
+    </section>
+    <h2>Lectura de archivos con el API FILE</h2>
+    <section>
+        <h3>Lectura XML</h3>
+        <p>
+            <label for="archivoXML">Seleccione un archivo XML: </label>
+            <input type="file" id="archivoXML" onchange="viajes.readXMLFile(this.files);">
+        </p>
+    </section>
+    <main><section><h4>Cueva de la Vaca – Mural de la Prehistoria Recorrido circular desde El Palmar</h4><p>Descripción: Caminata moderada. 
+            Se necesita buena forma física. 
+            Sendas de fácil acceso. 
+            Para todos los niveles. 
+            El punto de inicio de la Ruta es accesible en transporte público</p><ul><li>Tipo: Senderismo</li><li>Recomendacion: 8</li><li>Medio de transporte: A pie</li><li>Duración: 3 horas y 20 minutos</li><li>Agencia: Sin agencia</li><li>Personas adecuadas: Personas con buena forma física</li><li>Lugar de inicio: Parada del Bus Viazul</li><li>Dirección de inicio: 173-121 Rafael Trejo</li><li>Coordenadas de inicio: (-83.71173819098695, 22.613662371370935, 146)</li></ul><h5>Referencias de la ruta</h5><ul><li><a href="https://www.komoot.com/es-es/smarttour/423387">https://www.komoot.com/es-es/smarttour/423387</a></li><li><a href="https://es.wikiloc.com/rutas-senderismo/vinales-mural-de-la-prehistoria-cueva-de-la-vaca-circular-95876954">https://es.wikiloc.com/rutas-senderismo/vinales-mural-de-la-prehistoria-cueva-de-la-vaca-circular-95876954</a></li><li><a href="https://www.komoot.com/es-es/guide/2718679/rutas-de-senderismo-en-sierra-de-vinales">https://www.komoot.com/es-es/guide/2718679/rutas-de-senderismo-en-sierra-de-vinales</a></li></ul><h5>Hitos de la ruta</h5><h6>Mirrador Aussichtspunkt</h6><p>Excelentes vistas sobre el valle de Viñales</p><p>Coordenadas: (-83.71955634586483, 22.599765064501455, 185)</p><p>Distancia al hito anterior: 0.0 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/miradorValles.jpeg" alt="Fotografía de Mirrador Aussichtspunkt"><h6>Cueva de la vaca</h6><p>Puedes caminar por la cueva y continuar tu recorrido al otro lado del Mogote</p><p>Coordenadas: (-83.71731675873599, 22.638450898014174, 126)</p><p>Distancia al hito anterior: 0.7 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/cuevaVaca.jpg" alt="Fotografía de Cueva de la vaca"><h6>Mural de la prehistoria</h6><p>Realmente impresionante y también se puede admirar desde lejos.</p><p>Coordenadas: (-83.74290835014092, 22.61976036125839, 190)</p><p>Distancia al hito anterior: 5.46 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/muralPrehistoria.jpg" alt="Fotografía de Mural de la prehistoria"></section><section><h4>Recorrido circular de senderismo desde Topes de Collantes</h4><p>Descripción: Caminata moderada. 
+            Se necesita buena forma física. 
+            Sendas de fácil acceso. Para todos los niveles. 
+            El punto de inicio de la Ruta está junto a un aparcamiento.
+        </p><ul><li>Tipo: Senderismo</li><li>Recomendacion: 8</li><li>Medio de transporte: A pie</li><li>Duración: 2 horas y 4 minutos</li><li>Agencia: Sin agencia</li><li>Personas adecuadas: Personas con buena forma física</li><li>Lugar de inicio: Topes de Collante</li><li>Dirección de inicio: Topes de Collante, Cuba</li><li>Coordenadas de inicio: (-80.01815662080142, 21.915225131956095, 760)</li></ul><h5>Referencias de la ruta</h5><ul><li><a href="https://es.wikiloc.com/rutas/senderismo/cuba/sancti-spiritus/topes-de-collantes">https://es.wikiloc.com/rutas/senderismo/cuba/sancti-spiritus/topes-de-collantes</a></li><li><a href="https://es.wikiloc.com/rutas-senderismo/topes-de-collantes-sendero-salto-del-caburni-122641662">https://es.wikiloc.com/rutas-senderismo/topes-de-collantes-sendero-salto-del-caburni-122641662</a></li><li><a href="https://oceanika.travel.blog/2018/04/17/parque-nacional-topes-de-collantes-ruta-por-el-salto-de-caburni/">https://oceanika.travel.blog/2018/04/17/parque-nacional-topes-de-collantes-ruta-por-el-salto-de-caburni/</a></li></ul><h5>Hitos de la ruta</h5><h6>Hito 1</h6><p>Es un punto aleatorio de la ruta</p><p>Coordenadas: (-80.01455298968486, 21.918184398625744, 750)</p><p>Distancia al hito anterior: 0.0 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/hitoGenerico1.jpeg" alt="Fotografía de Hito 1"><h6>Hito 2</h6><p>Es un punto aleatorio de la ruta</p><p>Coordenadas: (-80.00848088046381, 21.920673467078604, 625)</p><p>Distancia al hito anterior: 0.6 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/hitoGenerico2.jpg" alt="Fotografía de Hito 2"><h6>Salto de caburni</h6><p>Realmente impresionante y también se puede admirar desde lejos.</p><p>Coordenadas: (-80.00484199063916, 21.921239870563042, 190)</p><p>Distancia al hito anterior: 0.4 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/caburni.jpeg" alt="Fotografía de Salto de caburni"></section><section><h4>Blick auf Vegas Grande – Wasserfall - Vegas Grande Recorrido circular desde El Chorrito</h4><p>Descripción: Caminata moderada. 
+            Se necesita buena forma física. 
+            Sendas de fácil acceso. 
+            Para todos los niveles. 
+            El punto de inicio de la Ruta es accesible en transporte público</p><ul><li>Tipo: Senderismo</li><li>Recomendacion: 8</li><li>Medio de transporte: A pie</li><li>Duración: 1 hora y 17 minutos</li><li>Agencia: Sin agencia</li><li>Personas adecuadas: Personas con buena forma física</li><li>Lugar de inicio: El Chorrito</li><li>Dirección de inicio: El chorrito, Cuba, Topes de Collante</li><li>Coordenadas de inicio: (-80.00848680291642, 21.904288405328725, 642)</li></ul><h5>Referencias de la ruta</h5><ul><li><a href="https://www.komoot.com/es-es/smarttour/423387">https://www.komoot.com/es-es/smarttour/423387</a></li><li><a href="https://es.wikiloc.com/rutas-senderismo/vinales-mural-de-la-prehistoria-cueva-de-la-vaca-circular-95876954">https://es.wikiloc.com/rutas-senderismo/vinales-mural-de-la-prehistoria-cueva-de-la-vaca-circular-95876954</a></li><li><a href="https://www.komoot.com/es-es/guide/2718679/rutas-de-senderismo-en-sierra-de-vinales">https://www.komoot.com/es-es/guide/2718679/rutas-de-senderismo-en-sierra-de-vinales</a></li></ul><h5>Hitos de la ruta</h5><h6>Puente</h6><p>Escalera de madera</p><p>Coordenadas: (-80.00541279525686, 21.905342724968182, 650)</p><p>Distancia al hito anterior: 0.0 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/kleine.jpg" alt="Fotografía de Puente"><h6>Vista de vegas grande</h6><p>Buenas vistas</p><p>Coordenadas: (-80.00327559789174, 21.912929251203035, 592)</p><p>Distancia al hito anterior: 2.0 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/vistasVegas.jpg" alt="Fotografía de Vista de vegas grande"><h6>Cascadas de Vegas</h6><p>Realmente impresionante y también se puede admirar desde lejos.</p><p>Coordenadas: (-80.0030154173518, 21.9134120164646, 550)</p><p>Distancia al hito anterior: 0.1 km</p><img src="https://localhost/EscritorioVirtual/multimedia/imagenes/cascadasVegas.jpg" alt="Fotografía de Cascadas de Vegas"></section></main>
+    <section>
+        <h3>Lectura de KML</h3>
+        <p>
+            <label for="archivoKML">Seleccione un archivo KML: </label>
+            <input type="file" id="archivoKML" onchange="viajes.readKMLFiles(this.files);" multiple="">
+        </p>
+        <section id="mapaDinamicoKML" class="mapboxgl-map">
+            <h4>Esta sección se usará para representar el mapa</h4>
+        <div class="mapboxgl-canary" style="visibility: hidden;"></div><div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" role="region" width="1887" height="460" style="width: 1887px; height: 459.5px;"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"></div><div class="mapboxgl-ctrl-bottom-left"><div class="mapboxgl-ctrl" style="display: block;"><a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a></div></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-attrib"><button class="mapboxgl-ctrl-attrib-button" type="button" aria-label="Toggle attribution"><span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Toggle attribution"></span></button><div class="mapboxgl-ctrl-attrib-inner" role="list"><a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox">© Mapbox</a> <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=mapbox&amp;id=streets-v12&amp;access_token=pk.eyJ1IjoiY2FybG9zZ2FycmlnYTEyIiwiYSI6ImNscGk0a3RhdDBjaG4yaW1hbWZmejFmcXYifQ.Tt6wJvHxGfjJS6BKNc0Tkw#/-80.663/22.146/6.87" target="_blank" aria-label="Map feedback" rel="noopener nofollow">Improve this map</a></div></div></div></div></section>
+    </section>
+    <section>
+        <h3>Lectura de SVG</h3>
+        <p>
+            <label for="archivoSVG">Seleccione un archivo SVG: </label>
+            <input type="file" id="archivoSVG" onchange="viajes.readSVGFiles(this.files);" multiple="">
+        </p>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<polyline points="10, 105.0 60, 32.0 110, 12.5 160, 42.0 210, 10.0 260, 105.0 10, 105.0" style="fill:white;stroke:red;stroke-width:4"></polyline>
+<text x="10" y="110.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+<text x="60" y="110.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Parada del Bus Viazul
+</text>
+<text x="110" y="110.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Mirrador Aussichtspunkt
+</text>
+<text x="160" y="110.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Cueva de la vaca
+</text>
+<text x="210" y="110.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Mural de la prehistoria
+</text>
+<text x="260" y="110.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+</svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<polyline points="10, 390.0 60, 10.0 110, 15.0 160, 77.5 210, 295.0 260, 390.0 10, 390.0" style="fill:white;stroke:red;stroke-width:4"></polyline>
+<text x="10" y="395.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+<text x="60" y="395.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Topes de Collante
+</text>
+<text x="110" y="395.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Hito 1
+</text>
+<text x="160" y="395.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Hito 2
+</text>
+<text x="210" y="395.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Salto de caburni
+</text>
+<text x="260" y="395.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+</svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<polyline points="10, 335.0 60, 14.0 110, 10.0 160, 39.0 210, 60.0 260, 335.0 10, 335.0" style="fill:white;stroke:red;stroke-width:4"></polyline>
+<text x="10" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+<text x="60" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+El Chorrito
+</text>
+<text x="110" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Puente
+</text>
+<text x="160" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Vista de vegas grande
+</text>
+<text x="210" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Cascadas de Vegas
+</text>
+<text x="260" y="340.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Nivel del mar
+</text>
+</svg></section>
+    <h2>Cambio de moneda</h2>
+    <p>Actualmente 1€ equivale a 26.3251 pesos cubanos.</p>    <h2>Carrusel de fotos</h2>
+    <section><h3>Carrusel generado correctamente</h3><img alt="Foto carrusel 0" src="./vij2_files/53407479913_fe621ba8ed_b.jpg" style="transform: translateX(-900%);"><img alt="Foto carrusel 1" src="./vij2_files/53405964706_3ae7d44152_b.jpg" style="transform: translateX(-800%);"><img alt="Foto carrusel 2" src="./vij2_files/53406276549_ffbde58b46_b.jpg" style="transform: translateX(-700%);"><img alt="Foto carrusel 3" src="./vij2_files/53405940791_15c17ceeaf_b.jpg" style="transform: translateX(-600%);"><img alt="Foto carrusel 4" src="./vij2_files/53406126428_e242a239d3_b.jpg" style="transform: translateX(-500%);"><img alt="Foto carrusel 5" src="./vij2_files/53406140833_eef8d3bd01_b.jpg" style="transform: translateX(-400%);"><img alt="Foto carrusel 6" src="./vij2_files/53406276534_b1e2428752_b.jpg" style="transform: translateX(-300%);"><img alt="Foto carrusel 7" src="./vij2_files/53406392610_1d00d1f76c_b.jpg" style="transform: translateX(-200%);"><img alt="Foto carrusel 8" src="./vij2_files/53405032427_1dbf75e6e0_b.jpg" style="transform: translateX(-100%);"><img alt="Foto carrusel 9" src="./vij2_files/53406265894_708790c5e4_b.jpg" style="transform: translateX(0%);"><button onclick="carrusel.siguienteFoto();"> &gt; </button><button onclick="carrusel.anteriorFoto();"> &lt; </button></section>
+</body></html>
