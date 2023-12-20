@@ -1,5 +1,5 @@
 /* Carlos Garriga Suárez UO276903*/
-/*Especificidad (0,0,2)*/
+/*Especificidad (0,1,2)*/
 body > section:nth-child(3) {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@ body > section:nth-child(3) {
     justify-content: center;
 }
 
-/*Especificidad (0,1,2)*/
+/*Especificidad (0,2,2)*/
 body > section:nth-child(3) > :first-child {
     width: 100%;
 }
@@ -19,6 +19,7 @@ h2{
 
 /*Especificidad (0,0,1)*/
 article {
+    /*ADVERTENCIA: El color de primer plano lo hereda de body*/
     background-color: #55b8ff;
     cursor: pointer;
     transform-style: preserve-3d;
@@ -26,12 +27,12 @@ article {
     flex: 0 1 20%;
 }
 
-/*Especificidad (0,1,1)*/
+/*Especificidad (0,1,1) (0,1,1)*/
 article[data-state="flip"], article[data-state="revealed"] {
     transform: rotateY(180deg);
 }
 
-/*Especificidad (0,0,2)*/
+/*Especificidad (0,0,2) (0,0,2)*/
 article h3,
 article img {
     background-color: #55b8ff;
@@ -51,5 +52,5 @@ article h3 {
 article img {
     transform: rotateY(180deg);
     display: block;
-    margin: 0 auto;
+    margin: 0em auto;
 }

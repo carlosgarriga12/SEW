@@ -7,7 +7,6 @@ class Pizzeria
     protected $pass;
     protected $dbname;
     protected $sql_init_file;
-    protected $sql_init_info_file;
 
     public function __construct()
     {
@@ -16,25 +15,24 @@ class Pizzeria
         $this->pass = "DBPSWD2023";
         $this->dbname = "pizzeria";
         $this->sql_init_file = "pizzeria.sql";
-        $this->sql_init_info_file = "pizzeria.csv";
     }
 
     public function crearBaseDeDatos()
     {
         if($this-> existeBaseDeDatos()) {
-            echo "<p>Ya existe la base de datos</p>";
+            return "<p>Ya existe la base de datos</p>";
         } else {
             $conn = new mysqli($this->server, $this->user, $this->pass);
 
             $sqlContent = file_get_contents($this->sql_init_file);
     
             if ($conn->multi_query($sqlContent)) {
-                echo "<p>Base de datos creada correctamente</p>";
+                $conn->close();
+                return "<p>Base de datos creada correctamente</p>";
             } else {
-                echo "<p>Error al ejecutar el script SQL: " . $conn->error. "</p>";
+                $conn->close();
+                return "<p>Error al ejecutar el script SQL: " . $conn->error. "</p>";
             }
-    
-            $conn->close();
         }
     }
 
@@ -46,19 +44,22 @@ class Pizzeria
     }
 
     public function importarDatos()
-    {
-        $csvFile = fopen($this->sql_init_info_file, "r");
+{
+    if ($this->existeBaseDeDatos()) {
+        if (strlen($_FILES['archivo']['tmp_name']) != 0) {
+            $tipo = substr($_FILES['archivo']['type'], 0, 4);
+            if (strcmp($tipo, 'text') == 0) {
+                $fp = fopen($_FILES['archivo']['tmp_name'], 'rb');
+                $db = new mysqli($this->server, $this->user, $this->pass, $this->dbname);
+                $dataElement = "";
+                $clientes = [];
+                $encargos = [];
+                $ingredientes = [];
+                $pizzas = [];
+                $pizzaIngredientes = [];
 
-        if (!$csvFile) {
-            echo ("No se pudo abrir el archivo CSV");
-        }
-        
-        if ($this-> existeBaseDeDatos()) {
-            $db = new mysqli($this->server, $this->user, $this->pass, $this->dbname);
-            $dataElement = "";
-            for($i = 0; $i < 2; $i = $i + 1) {
-                while (($data = fgetcsv($csvFile, 1000, ",")) !== FALSE) {
-                    $firstElement = $data[0];
+                while (($linea = fgetcsv($fp, 1000, ",")) !== FALSE) {
+                    $firstElement = $linea[0];
                     switch ($firstElement) {
                         case "ID_Cliente":
                             $dataElement = "Cliente";
@@ -70,7 +71,7 @@ class Pizzeria
                             $dataElement = "Ingrediente";
                             continue 2;
                         case "ID_Pizza":
-                            if($data[1] === "ID_Ingrediente") {
+                            if ($linea[1] === "ID_Ingrediente") {
                                 $dataElement = "PizzaIngrediente";
                             } else {
                                 $dataElement = "Pizza";
@@ -79,19 +80,19 @@ class Pizzeria
                         default:
                             switch ($dataElement) {
                                 case "Cliente":
-                                    $this->insertarClienteCSV($data, $db);
+                                    $clientes[] = $linea;
                                     break;
                                 case "Encargo":
-                                    $this->insertarEncargoCSV($data, $db);
+                                    $encargos[] = $linea;
                                     break;
                                 case "Ingrediente":
-                                    $this->insertarIngredienteCSV($data, $db);
+                                    $ingredientes[] = $linea;
                                     break;
                                 case "Pizza":
-                                    $this->insertarPizzaCSV($data, $db);
+                                    $pizzas[] = $linea;
                                     break;
                                 case "PizzaIngrediente":
-                                    $this->insertarPizzaIngredienteCSV($data, $db);
+                                    $pizzaIngredientes[] = $linea;
                                     break;
                                 default:
                                     break;
@@ -99,43 +100,71 @@ class Pizzeria
                             break;
                     }
                 }
+
+                fclose($fp);
+
+                foreach ($clientes as $cliente) {
+                    $this->insertarClienteCSV($cliente, $db);
+                }
+
+                foreach ($pizzas as $pizza) {
+                    $this->insertarPizzaCSV($pizza, $db);
+                }
+
+                foreach ($ingredientes as $ingrediente) {
+                    $this->insertarIngredienteCSV($ingrediente, $db);
+                }
+
+                foreach ($pizzaIngredientes as $pizzaIngrediente) {
+                    $this->insertarPizzaIngredienteCSV($pizzaIngrediente, $db);
+                }
+
+                foreach ($encargos as $encargo) {
+                    $this->insertarEncargoCSV($encargo, $db);
+                }
+
+                $db->close();
+                return "<p>Datos importados correctamente</p>";
+            } else {
+                return "<p>El archivo proporcionado no es de tipo CSV</p>";
             }
-            fclose($csvFile);
-            $db->close();
-            echo "<p>Datos importados correctamente</p>";
+
         } else {
-            echo "<p>La base de datos no ha sido creada</p>";
+            return "<p>No se ha proporcionado un archivo CSV</p>";
         }
+    } else {
+        return "<p>Todavía no existe la base de datos</p>";
     }
+}
 
     public function exportarDatos() {
         if ($this->existeBaseDeDatos()) {
             $conn = new mysqli($this->server, $this->user, $this->pass, $this->dbname);
-    
+        
             $csvFileName = "pizzeria_exportada.csv";
             $csvFile = fopen($csvFileName, 'w');
-    
+        
             $tablesQuery = "SHOW TABLES";
             $tablesResult = $conn->query($tablesQuery);
-    
+        
             while ($tableRow = $tablesResult->fetch_row()) {
                 $tableName = $tableRow[0];
-    
+        
                 $columnsQuery = "SHOW COLUMNS FROM $tableName";
                 $columnsResult = $conn->query($columnsQuery);
                 $columnNames = array();
-    
+        
                 while ($columnRow = $columnsResult->fetch_assoc()) {
                     $columnNames[] = '"' . $columnRow['Field'] . '"';
                 }
-    
+        
                 fwrite($csvFile, implode(',', $columnNames) . "\n");
-    
+        
                 $dataQuery = "SELECT * FROM $tableName";
                 $dataResult = $conn->query($dataQuery);
-    
+        
                 while ($rowData = $dataResult->fetch_assoc()) {
-                    $rowDataQuoted = array_map(function($value) {
+                    $rowDataQuoted = array_map(function ($value) {
                         return '"' . $value . '"';
                     }, $rowData);
                     fwrite($csvFile, implode(',', $rowDataQuoted) . "\n");
@@ -143,9 +172,15 @@ class Pizzeria
             }
             fclose($csvFile);
             $conn->close();
-            echo "<p>Datos exportados correctamente a la carpeta local</p>";
+        
+            header('Content-Type: application/csv');
+            header('Content-Disposition: attachment; filename="' . $csvFileName . '"');
+            readfile($csvFileName);
+        
+            unlink($csvFileName);
+            exit;
         } else {
-            echo "<p>La base de datos no ha sido creada todavía";
+            return "<p>La base de datos no ha sido creada todavía</p>";
         }
     }
 
@@ -213,10 +248,7 @@ class Pizzeria
     public function obtenerIngredientesPizza($idPizza) {
         $db = new mysqli($this->server, $this->user, $this->pass, $this->dbname);
         $ingredientes = array();
-        $stmt = $db->prepare("SELECT i.Nombre_Ingrediente, i.Tipo, pi.Cantidad
-        FROM pizza_ingredientes pi
-        JOIN ingredientes i ON pi.ID_Ingrediente = i.ID_Ingrediente
-        WHERE pi.ID_Pizza = ?");
+        $stmt = $db->prepare("SELECT i.Nombre_Ingrediente, i.Tipo, pi.Cantidad FROM pizza_ingredientes pi JOIN ingredientes i ON pi.ID_Ingrediente = i.ID_Ingrediente WHERE pi.ID_Pizza = ?");
         $stmt->bind_param("i", $idPizza);
         $stmt->execute();
         $stmt->bind_result($nombreIngrediente, $tipo, $cantidad);
@@ -273,6 +305,17 @@ class Pizzeria
     }
 
 }
+
+$pizzeria = new Pizzeria();
+$mensaje = "<p>Comience creando la base de datos</p>";
+if (count($_POST) > 0) {
+    if (isset($_POST["crear"])) $mensaje = $pizzeria->crearBaseDeDatos();
+    if (isset($_POST["importar"])) $mensaje = $pizzeria->importarDatos();
+    if (isset($_POST["exportar"])) $mensaje = $pizzeria->exportarDatos();
+    if (isset($_POST["nombre"]) && isset($_POST["direccion"]) && isset($_POST["telefono"])) {
+        $pizzeria -> crearCliente($_POST["nombre"], $_POST["direccion"], $_POST["telefono"]);
+    }
+}
 ?>
 <!DOCTYPE html>
 
@@ -319,22 +362,18 @@ class Pizzeria
     <h2>Pizzeria virtual</h2>
     <section>
         <h3>Panel de control</h3>
-        <form action="#" method="post" name="panel">
-            <input type='submit' value='Crear base de datos' name='crear' />
-            <input type='submit' value='Importar información' name='importar' />
-            <input type='submit' value='Exportar información' name='exportar' />
+        <form action="#" method="post" name="panel" enctype='multipart/form-data'>
+            <p><input type='submit' value='Crear base de datos' name='crear' /></p>
+            <p>
+                <label for='archivo'>Seleccione el archivo para importar datos: </label>
+                <input type='file' id="archivo" name='archivo' />
+            </p>
+            <p><input type='submit' value='Importar datos' name='importar'/></p>
+            <p><input type='submit' value='Exportar datos' name='exportar'/></p>
         </form>
     </section>
     <?php
-    $pizzeria = new Pizzeria();
-    if (count($_POST) > 0) {
-        if (isset($_POST["crear"])) $pizzeria->crearBaseDeDatos();
-        if (isset($_POST["importar"])) $pizzeria->importarDatos();
-        if (isset($_POST["exportar"])) $pizzeria->exportarDatos();
-        if (isset($_POST["nombre"]) && isset($_POST["direccion"]) && isset($_POST["telefono"])) {
-            $pizzeria -> crearCliente($_POST["nombre"], $_POST["direccion"], $_POST["telefono"]);
-        }
-    }
+        echo $mensaje;
     ?>
     <section>
         <h3>Aplicación</h3>
@@ -401,7 +440,7 @@ class Pizzeria
             ?>
         </section>
         <section>
-            <h4>Encargos por cliente</h4>
+            <h4>Buscar encargos por cliente</h4>
             <?php
                 if($pizzeria->existeBaseDeDatos()) {
                     $clientes = $pizzeria -> obtenerClientes();
@@ -432,7 +471,6 @@ class Pizzeria
                             } else {
                                 echo "<p>No existe el cliente especificado</p>";
                             }
-                            
                         }
 
                     } else {

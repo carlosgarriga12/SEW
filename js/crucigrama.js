@@ -200,8 +200,10 @@ class Crucigrama{
         +"<p>"
             +"<label for='tiempo'>Tiempo empleado: </label>"
             +"<input id='tiempo' type='number' name='tiempo' value='" + this.parseTime(this.tiempoTotal) + "' readonly/>"
-        +"</p>"           
-        +"<input type='submit'  value='Enviar datos'/>"
+        +"</p>"
+        +"<p>"           
+        +"<input type='submit' value='Enviar datos'/>"
+        +"</p>"
         +"</form>"
         +"</section>";
         
@@ -209,7 +211,7 @@ class Crucigrama{
     }
 }
 
-
+//Comentar y descomentar el nivel que se quiera poner
 var crucigrama = 
 new Crucigrama("4,*,.,=,12,#,#,#,5,#,#,*,#,/,#,#,#,*,4,-,.,=,.,#,15,#,.,*,#,=,#,=,#,/,#,=,.,#,3,#,4,*,.,=,20,=,#,#,#,#,#,=,#,#,8,#,9,-,.,=,3,#,.,#,#,-,#,+,#,#,#,*,6,/,.,=,.,#,#,#,.,#,#,=,#,=,#,#,#,=,#,#,6,#,8,*,.,=,16", "fácil");
 //new Crucigrama("12,*,.,=,36,#,#,#,15,#,#,*,#,/,#,#,#,*,.,-,.,=,.,#,55,#,.,*,#,=,#,=,#,/,#,=,.,#,15,#,9,*,.,=,45,=,#,#,#,#,#,=,#,#,72,#,20,-,.,=,11,#,.,#,#,-,#,+,#,#,#,*,56,/,.,=,.,#,#,#,.,#,#,=,#,=,#,#,#,=,#,#,12,#,16,*,.,=,32", "intermedio");

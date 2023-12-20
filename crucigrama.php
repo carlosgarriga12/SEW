@@ -1,5 +1,4 @@
 <?php
-    session_start();
     class Record {
         protected $server;
         protected $user;
@@ -111,7 +110,6 @@
             echo '</ol>';
             echo '</section>';
             $record->getDb()->close();
-            session_destroy();
         }
     ?>
     <section data-type="botonera">
@@ -129,6 +127,7 @@
         <button onclick="crucigrama.introduceElement('+')">+</button>
         <button onclick="crucigrama.introduceElement('-')">-</button>
         <button onclick="crucigrama.introduceElement('/')">/</button>
+        <button>Borrar</button>
     </section>
     <script>
         crucigrama.paintMathword();

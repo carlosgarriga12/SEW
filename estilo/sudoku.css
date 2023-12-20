@@ -1,23 +1,21 @@
 /* Carlos Garriga Suárez UO276903*/
-/* Carlos Garriga Suárez UO276903*/
 /*Especificidad (0,0,1)*/
 main {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    gap:0;
     width: 80vw;
     height: 60vh;
     border-left: 0.2em solid #000000;
     border-top: 0.2em solid #000000;
-    margin:0 auto;
+    margin:0em auto;
 }
 
 /*Especificidad (0,0,1)*/
 p {
-    border: 0.05em solid #757575;
+    border: 0.05em solid #353535;
     padding: 0.5em;
     text-align: center;
-    margin: 0;
+    margin: 0em;
 }
 
 /*Especificidad (0,0,1)*/
@@ -30,9 +28,7 @@ main > :nth-child(3n) {
     border-right: 0.2em solid #000000;
 }
 
-/*Especificidad (0,2,2)*/
-/*Especificidad (0,2,2)*/
-/*Especificidad (0,1,2)*/
+/*Especificidad (0,2,2) (0,2,2) (0,1,2)*/
 main > p:nth-child(n+19):nth-child(-n+27),
 main > p:nth-child(n+46):nth-child(-n+54),
 main > p:nth-last-child(-n+9) {

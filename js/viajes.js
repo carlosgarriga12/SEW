@@ -55,6 +55,7 @@ class Viajes {
 
         var markerCoordinates = [this.longitud, this.latitud];
 
+        /*Añadir el marcador en el mapa genera una advertencia en el código generado, pero es código externo*/
         new mapboxgl.Marker()
             .setLngLat(markerCoordinates)
             .addTo(map);

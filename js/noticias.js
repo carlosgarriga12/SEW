@@ -20,16 +20,14 @@ class Noticias {
 
                     noticias.forEach((noticia) => {
                         let secciones = noticia.split('_')
+                        var article = $('<article>')
 
-                        let titulo = $('<h3>').text(secciones[0]);
-                        let subtitulo = $('<h4>').text(secciones[1]);
-                        let contenido = $('<p>').text(secciones[2]);
-                        let autor = $('<p>').text(secciones[3]);
+                        $(article).append($('<h3>').text(secciones[0]))
+                        $(article).append($('<h4>').text(secciones[1]))
+                        $(article).append($('<p>').text(secciones[2]))
+                        $(article).append($('<p>').text(secciones[3]))
 
-                        $('main').append(titulo)
-                        $('main').append(subtitulo)
-                        $('main').append(contenido)
-                        $('main').append(autor)
+                        $('main').append(article)
 
                     })
                 }
@@ -49,17 +47,16 @@ class Noticias {
         let textoAutor = textAreas[3].value
         
         if (textoTitulo === "" || textoSubtitulo === "" || textoContenido === "" || textoAutor === "") {
-            alert("Porfavor rellene todos los campos antes de añadir una noticia");
+            alert("Por favor rellene todos los campos antes de añadir una noticia");
         } else {
-            let titulo = $('<h3>').text(textoTitulo);
-            let subtitulo = $('<h4>').text(textoSubtitulo);
-            let contenido = $('<p>').text(textoContenido);
-            let autor = $('<p>').text(textoAutor);
+            var article = $('<article>')
 
-            $('main').append(titulo)
-            $('main').append(subtitulo)
-            $('main').append(contenido)
-            $('main').append(autor)
+            $(article).append($('<h3>').text(textoTitulo))
+            $(article).append($('<h4>').text(textoSubtitulo))
+            $(article).append($('<p>').text(textoContenido))
+            $(article).append($('<p>').text(textoAutor))
+
+            $('main').append(article)
 
             textAreas.forEach((t) => t.value = "")
         }

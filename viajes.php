@@ -110,16 +110,16 @@ class Moneda{
     <h2>Lectura de archivos con el API FILE</h2>
     <section>
         <h3>Lectura XML</h3>
-        <p>Seleccione un archivo XML:</p>
         <p>
+            <label for="archivoXML">Seleccione un archivo XML: </label>
             <input type="file" id="archivoXML" onchange="viajes.readXMLFile(this.files);">
         </p>
     </section>
     <main></main>
     <section>
         <h3>Lectura de KML</h3>
-        <p>Seleccione los archivos KML:</p>
         <p>
+            <label for="archivoKML">Seleccione un archivo KML: </label>
             <input type="file" id="archivoKML" onchange="viajes.readKMLFiles(this.files);" multiple>
         </p>
         <section id="mapaDinamicoKML">
@@ -128,8 +128,8 @@ class Moneda{
     </section>
     <section>
         <h3>Lectura de SVG</h3>
-        <p>Seleccione los archivos SVG:</p>
         <p>
+            <label for="archivoSVG">Seleccione un archivo SVG: </label>
             <input type="file" id="archivoSVG" onchange="viajes.readSVGFiles(this.files);" multiple>
         </p>
     </section>
